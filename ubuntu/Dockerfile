@@ -10,7 +10,6 @@ LABEL dockerImage.teamcity.version="latest" \
 
 COPY run-agent.sh /run-agent.sh
 COPY run-services.sh /run-services.sh
-COPY dist/buildagent /opt/buildagent
 
 RUN apt-get update && \
     apt-get install -y git mercurial apt-transport-https ca-certificates software-properties-common && \
